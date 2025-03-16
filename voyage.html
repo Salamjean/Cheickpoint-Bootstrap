@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <title>Voyage</title>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">travel Agency</a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destination">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#circuit">Circuits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section héros -->
+    <section class="hero-section text-center text-white" id="accueil" style="background-image: url('images/explorer.jpg'); background-size: cover; padding: 150px 0;height:650px;">
+        <div class="container">
+          <h1 class="display-4">Explorez le Monde</h1>
+          <p class="lead">Découvrez des destinations incroyables avec nous.</p>
+          <a href="#" class="btn btn-primary btn-lg">Voir les Destinations</a>
+        </div>
+      </section>
+    
+      <!-- Section Destinations -->
+      <section class="destinations-section py-5" id="destination">
+        <div class="container">
+          <h2 class="text-center mb-5">Nos Destinations</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/paris.avif" class="card-img-top" alt="Destination 1">
+                <div class="card-body">
+                  <h5 class="card-title">Paris</h5>
+                  <p class="card-text">La capitale de la france est la ville propise pour vos voyage.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/londres.jpg" class="card-img-top" alt="Destination 2">
+                <div class="card-body">
+                  <h5 class="card-title">Londres</h5>
+                  <p class="card-text">Une des plus importantes des villes des états unis</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/ottawa.jpg" class="card-img-top" alt="Destination 3">
+                <div class="card-body">
+                  <h5 class="card-title">Ottawa</h5>
+                  <p class="card-text">Une tres grande ville canadienne qui va vous accueillir les bras ouverts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Section Voyages -->
+      <section class="trips-section py-5" id="circuit">
+        <div class="container">
+          <h2 class="text-center mb-5">Nos Circuits</h2>
+          <div class="accordion" id="tripsAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  <i class="fas fa-map-marked-alt me-2"></i> Circuit 1 : Aventure en Montagne
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#tripsAccordion">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="images/montage.avif" class="img-fluid rounded" alt="Circuit 1">
+                    </div>
+                    <div class="col-md-8">
+                      <p>
+                        Découvrez les sommets enneigés et les paysages à couper le souffle de nos montagnes. Ce circuit de 7 jours comprend :
+                      </p>
+                      <ul>
+                        <li>Randonnées guidées</li>
+                        <li>Nuitées en refuge</li>
+                        <li>Petits déjeuners inclus</li>
+                      </ul>
+                      <p class="fw-bold">Prix : $1200</p>
+                      <a href="#" class="btn btn-outline-primary">Voir les détails</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <!-- Formulaire de contact -->
+      <section class="contact-section py-5" id="contact">
+        <div class="container">
+          <h2 class="text-center mb-5">Contactez-nous</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="destination" class="form-label">Destination d'intérêt</label>
+              <input type="text" class="form-control" id="destination">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Pied de page -->
+      <footer class="footer py-3 bg-light">
+        <div class="container text-center">
+          <p>&copy; 2025 travel Agency. Tous droits réservés.</p>
+          <div>
+            <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
